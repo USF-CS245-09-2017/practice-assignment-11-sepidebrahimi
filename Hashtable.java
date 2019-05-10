@@ -7,7 +7,7 @@ public class Hashtable {
 
 
         public Hashtable() { //constructor
-            slots = new HashNode[1000]; //hash table with - size of 1000
+            slots = new HashNode[10000]; //hash table with - size of 10000
             size = 0;
         }
 
