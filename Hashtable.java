@@ -7,7 +7,7 @@ public class Hashtable {
 
 
         public Hashtable() { //constructor
-            slots = new HashNode[1000];
+            slots = new HashNode[1000]; //hash table with - size of 1000
             size = 0;
         }
 
@@ -22,12 +22,12 @@ public class Hashtable {
             if(slots[pos] != null) {
                 HashNode tmp = slots[pos];
                 while(tmp.next != null) { // while there is another node available
-                    if(tmp.key().equals(key)) {
+                    if(tmp.key().equals(key)) { //if the key = node
                         return true;
                     }
                 }
             }
-            return false;
+            return false; //if the key does not exist
         }
 
         public String get(String key) { //get the value
@@ -40,7 +40,7 @@ public class Hashtable {
                 }
                 spot = spot.next;
             }
-            return null;
+            return null; //if key was not found
         }
 
         public void put (String key, String value) { //put a node with a key and a value
